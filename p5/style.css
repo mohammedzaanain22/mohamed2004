@@ -1,0 +1,589 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    color: #000;
+}
+header{
+ background-color: rgb(244, 246, 246);
+}
+header nav{
+   
+    height: 60px;
+    padding: 15px ;
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .links ul{
+    display: flex;
+}
+li{
+    padding: 10px;
+}
+
+header nav .title a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+header nav .links ul a{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+header nav .links ul .home a{
+    color: #1a70c1;
+}
+main section .background {
+    background-image:
+     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+      url('background.jpg');
+     background-size: cover;
+    padding: 5px 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 500px;
+       color: #e2dada;
+     
+}
+main section .background .column_list .Row{
+    display: flex;
+    align-items: center;  
+    background-color: rgba(0, 0, 0, 0.65);  
+    margin-bottom: 15px;
+    padding: 10px;
+   
+}
+main section .background .column_list {
+    background-color:  rgba(20, 20, 20, 0.45); 
+    border-radius: 12px;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+   
+}
+
+main section .background .column_list .Row p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+main section .background .column_list .Row i{
+    font-size: 20px;
+}
+main section .background .column_list .Row div {
+    text-align: start;
+   margin-left: 20px; 
+}
+main section .background div button {
+    background-color: rgb(49, 214, 12);
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+   margin-right: 10px;
+    
+}
+main section .background div h3{
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+main section .background div p {
+    font-size: 15px;
+
+}
+.sec2{
+    padding: 50px;
+}
+main  .sec2 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+main  .sec2 .container .title_cards .Cards  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main  .sec2 .container .title_cards .Cards .card {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+main  .sec2 .container .title_cards .Cards .card i{
+    font-size: 35px;
+}
+main  .sec2 .container .title_cards{
+     
+    text-align: center;
+}
+main  .sec2 .container .title_cards .text {
+    padding-top: 30px;
+   
+}
+main  .sec2 .container .title_cards .text h4 {
+     font-size: 18px;
+     margin-top: 0;
+    
+}
+main  .sec2 .container .title_cards .text  p {
+    margin: 0;
+    font-size: 9px;
+}
+main  .sec2 .container .title_cards .Cards .card i{
+    color: #1a70c1;
+    font-size: 10;
+}
+main  .sec3 .container .info  {
+    text-align: center;
+       
+}
+main  .sec3 .container {
+    width:80% ;
+    margin: 0 auto;
+}
+
+main  .sec3 .container .info  .inpotr{
+    display: flex;
+    justify-content: space-between;
+}
+main  .sec3 .container .info .title{
+    padding: 60px 0;
+}
+main  .sec3 .container .info .title p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+main  .sec3 .container .info .title h4{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+main  .sec3 .container .info .inpotr p{
+    margin-bottom: 20px;
+}
+main  .sec3 .container .info .inpotr i{
+    color: #3fef83;
+}
+main  .sec4 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+main  .sec4 .container .title_cards .Cards  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main  .sec4 .container .title_cards .Cards .card {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+   
+}
+
+main  .sec4 .container .title_cards .Cards .card i{
+    font-size: 35px;
+    color: #2353cb;
+}
+main  .sec4 .container .title_cards{
+    text-align: center;
+}
+.sec4 .container .title_cards .Cards .card h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+main  .sec4 .container .title_cards .text {
+    padding-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+   
+}
+main  .sec4 .container .title_cards .text h4 {
+     font-size: 18px;
+     margin-top: 0;
+    
+}
+main  .sec4 .container .title_cards .text  p {
+    margin: 0;
+    font-size: 9px;
+}
+main  .sec4 .container .title_cards .Cards .card i{
+    font-size: 10;
+}
+main  .sec4 .container .title_cards .text :nth-child(3){
+    font-size: 20px;
+    font-weight: bold;
+}
+main  .sec4 .container .title_cards .text :nth-child(1){
+    margin: 0;
+    font-size: 15px;
+
+}
+main  .sec4 .container .title_cards .text h4{
+    margin: 0;
+    font-size: 42px;
+
+}
+img{
+    width: 100%;
+}
+main  .sec5 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+main  .sec5 .container .title_cards .Cards  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main  .sec5 .container .title_cards .Cards .card {
+    background-color: rgb(247, 247, 247);
+    padding: 0;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: start;
+}
+main  .sec5 .container .title_cards .Cards .card img {
+     border-radius: 20px 20px 0 0;
+}
+main  .sec5 .container .title_cards .Cards .card .infoimg{
+    padding: 10px 20px;
+}
+
+main  .sec5 .container .title_cards .Cards .card i{
+    font-size: 35px;
+    color: #2353cb;
+}
+main  .sec5 .container .title_cards{
+    text-align: center;
+}
+main  .sec5 .container .title_cards .text {
+    
+   padding: 100px;
+   
+}
+main  .sec5 .container .title_cards .text h4 {
+     font-size: 18px;
+     margin-top: 0;
+    
+}
+main  .sec5 .container .title_cards .text  p {
+    margin: 0;
+    font-size: 9px;
+}
+main  .sec5 .container .title_cards .Cards .card i{
+    font-size: 10;
+}
+main  .sec5 .container .title_cards .text :nth-child(3){
+    font-size: 20px;
+    font-weight: bold;
+}
+main  .sec5 .container .title_cards .text :nth-child(1){
+    margin: 0;
+    font-size: 15px;
+
+}
+main  .sec5 .container .title_cards .text h4{
+    margin: 0;
+    font-size: 42px;
+
+}
+main  .sec5 .container .title_cards .Cards .card  .infoimg button{
+    display: flex;
+    margin: 10px 0 0 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #1a70c1;
+    border: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    color: #faf1f1;
+    font-weight: bold;
+   
+}
+main  .sec5 .container .title_cards .Cards .card  .infoimg i{
+    color: #d8d8d8;
+    font-weight: 500;
+}
+main .sec6 {
+    background-color: #1a70c1;
+    color: #fffbfb;
+    font-size: 25px;
+    padding: 30px;
+   
+}
+main .sec6 .toatl {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+main  .sec7 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+main  .sec7 .container .title_cards .Cards  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main  .sec7 .container .title_cards .Cards .card {
+    margin: 10px;
+    
+}
+
+main  .sec7 .container .title_cards .Cards .card .infoimg{
+    padding: 10px 20px;
+}
+
+
+main  .sec7 .container .title_cards{
+    text-align: center;
+}
+main  .sec7 .container .title_cards .text {
+    padding: 60px;
+   
+}
+main  .sec7 .container .title_cards .text h4 {
+     font-size: 18px;
+     margin-top: 0;
+    
+}
+main  .sec7 .container .title_cards .text  p {
+    margin: 0;
+    font-size: 9px;
+}
+
+main  .sec7 .container .title_cards .text :nth-child(3){
+    font-size: 15px;
+    font-weight: bold;
+}
+main  .sec7 .container .title_cards .text :nth-child(1){
+    margin: 0;
+    font-size: 15px;
+
+}
+main  .sec7 .container .title_cards .text h4{
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.sec7 ,header ,.sec5 ,.sec4 ,.sec2 ,.sec8 ,.sec9 ,.sec10 {
+    background-color:rgba(237, 235, 235, 0.6);
+}
+main .sec8 {
+    padding: 20px;
+}
+main .sec8 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+main .sec8{
+    padding: 90px;
+}
+main .sec8 .container div  {  
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+   box-shadow: 0 0 15px 5px rgba(5, 5, 5, 0.1); 
+  
+}
+main .sec8 .container div h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+main .sec8 .container div button{
+    background-color: #1a70c1;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: #ffffff;
+}
+.sec9 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.sec9 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.sec9 .container .all{
+    text-align: center;
+    
+}
+.sec9 .container .all :nth-child(1){
+    margin: 0;
+}
+.sec9 .container .all :nth-child(2){
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sec9 .container .cards {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sec9 .container .cards .card{
+    
+    background-color:#1a70c1;
+    
+    text-align: start;
+    padding: 15px;
+    color: #ffffff;
+    margin: 10px;
+    
+  
+}
+.sec9 .container .cards .card .info{
+    text-align: start;
+    padding-top: 15px;
+  
+}
+.sec9 .container .cards .card .info :nth-child(2){
+    font-size:18px;
+    padding-top: 8px;
+    margin: 0;
+
+}
+.sec9 .container .cards .card .info :nth-child(1){
+    font-size:13px;
+
+}
+.sec9 .container .cards .card .info :nth-child(3){
+    font-size:13px;
+
+}
+.sec9 .container .cards .card .info :nth-child(4){
+    padding-top: 35px;
+    font-size:15px;
+  
+}
+.sec10 .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.sec10 .container .all{
+    text-align: center;
+}
+.sec10 .container .all .title {
+    padding: 35px;
+}
+.sec10 .container .all .title :nth-child(1){
+    margin: 0;
+    font-weight: 600;
+    
+}
+.sec10 .container .all .title :nth-child(2){
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.sec10 .container .all .title :nth-child(3){
+    margin: 0;   
+    font-size: 20px;
+}
+.sec10 .container .all .text{
+    text-align: start;
+}
+.sec10 .container .all .text .one {
+    font-weight: bold;
+    background-color: #cfd1d3;
+    padding: 2px 10px;
+}
+.sec10 .container .all .text .two {
+    padding: 0 10px;
+}
+.sec10 .container .all .text .two p {
+    margin-bottom: 0;
+    padding: 0 0 10px 0;
+}
+.sec10{
+    padding-bottom: 50px;
+}
+footer{
+
+    background-color: #1a70c1;
+}
+footer .info{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+}
+
+footer .info div{
+    padding: 20px 0;
+    color: #ffffff;
+}
+footer .info div p{
+   margin: 0;
+   margin-top: 10px;
+}
+
+
+
+
+
+
+
+.custom-underline-text {
+    color: #ffffff;          
+    text-decoration: none;     
+    font-size: 20px;        
+    font-weight: bold;         
+    font-family: sans-serif; 
+    position: relative;        
+    display: inline-block;
+    padding-bottom: 6px;       
+}
+
+
+.custom-underline-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;                 
+    left: 0;                 
+    width: 55%;                
+    height: 2px;             
+    background-color: #ffffff; 
+}
+
+

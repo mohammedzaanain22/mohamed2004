@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+   margin: 0;
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    width: 200px;
+    
+}
+h1{
+    font-size: 22px;
+}
+i{
+    color: #000;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    
+  
+}
+.nav1 .left{
+    display: flex;
+     align-items: center;
+    margin-left: 10px;
+}
+.nav1 .left p{
+ margin-right: 8px;
+}
+.nav1 .rghit{
+    margin-right: 10px;
+}
+
+.nav1 .rghit ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+.nav1 .rghit ul a{
+padding: 10px;
+}
+
+.nav2{
+    background-color: rgb(84, 151, 57);
+    text-align: center;
+}
+.nav3{
+    margin-top: 20px;
+    text-align: center;
+}
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.sec1 div:nth-child(1) h4{
+    font-weight: lighter;
+    padding: 5px;
+  border: 2px solid black;
+}
+.sec1 div:nth-child(2) ul{
+display: flex;
+
+}
+.sec1 div:nth-child(2) ul a{
+    padding: 6px;
+    color: #000;
+    text-decoration: underline;
+}
+.sec1 div:nth-child(3) h4{
+    font-weight: lighter;
+    background-color: #000;
+    color: #ffffff;
+    padding: 7.5px;
+}
+
+.sec2{
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "photo  info info number card card"
+    ;
+
+    
+}
+.photo{
+    grid-area:photo;
+}
+.info{
+    grid-area: info;
+}
+.number{
+    grid-area: number;
+}
+.card{
+    grid-area: card;
+}
+.card{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(254, 254, 254);
+    
+}
+.card .subtotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.total{
+    font-weight: bold;
+}
+button{   
+    background-color: black;
+    color: #ffffff;
+    width:  100%;
+    padding:4px;
+}
+.info div{
+    margin-top: 10px;
+}
+.info .color{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(134, 134, 219);
+}
+.number div{
+    margin-top: 10px;
+}
