@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray :#333;
+    --green :#4bae4f ;
+    --light-gray : #edeef0
+}
+.container{
+    min-height: 100vh;
+    background-color:var(--gray) ;
+    padding: 10px;
+}
+.todo-list{
+    background-color: #fff;
+    max-width:540px ;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+.todo-list .title img {
+    width:30px;
+    margin-left: 10px;
+}
+.todo-list .Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.todo-list .Row input {
+    background-color: var(--light-gray);
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.todo-list .Row .btn{
+    border: none;
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+.task-list li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+.task-list li span {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.task-list li::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+background: url("../img/un.png") center/cover;
+}
+.task-list li.checked{
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+background: url("../img/yes.png") center/cover;
+}
