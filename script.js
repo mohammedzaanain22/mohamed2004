@@ -6,6 +6,7 @@ function addTask(){
     if(!taskinput){
         alert("رجاء كتابة مهام ");
     }else{
+        
         let li = document.createElement("li");
         let span = document.createElement("span");
          li.innerHTML = taskinput ;
