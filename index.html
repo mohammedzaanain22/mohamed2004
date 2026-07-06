@@ -3,81 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tody-List By Mohamed</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
+
   <body>
     <main>
       <div class="container">
-        <header>
-          
-          <ul class="allbutton">
-            <li><button class="active" data-name="all">Show all</button></li>
-            <li><button data-name="Phones">Phones</button></li>
-            <li><button data-name="Clothes">Clothes</button></li>
-            <li><button data-name="Shoes">Shoes</button></li>
-          </ul>
-        </header>
-        <section>
-          <div class="allcards">
-            <div class="card" data-name="Clothes">
-              <img src="cloth-1.jpg" alt="Cloth1" />
-              <div class="title">
-                <h4>Cloth</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Phones">
-              <img src="phone-1.jpg" alt="phone-1" />
-              <div class="title">
-                <h4>Phone</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Clothes">
-              <img src="cloth-2.jpg" alt="cloth-1" />
-              <div class="title">
-                <h4>cloth</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Shoes">
-              <img src="shoe-1.jpg" alt="Shoes-1" />
-              <div class="title">
-                <h4>Shoes</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Phones">
-              <img src="phone-2.jpg" alt="phone-1" />
-              <div class="title">
-                <h4>Phone</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Clothes">
-              <img src="cloth-3.jpg" alt="Clothes-1" />
-              <div class="title">
-                <h4>Clothes</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Shoes">
-              <img src="shoe-2.jpg" alt="Shoes-1" />
-              <div class="title">
-                <h4>Shoes</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
-            <div class="card" data-name="Phones">
-              <img src="phone-1.jpg" alt="Phones-1" />
-              <div class="title">
-                <h4>Phones</h4>
-                <p>Lorem ipsum dolor...</p>
-              </div>
-            </div>
+        <div class="todo-list">
+          <div class="title">
+            <h2>Todo List</h2>
+            <img src="img/icon1.png" alt="img-list" />
           </div>
-        </section>
+          <div class="Row">
+            <input maxlength="120" type="text" id="input-text" placeholder="Enter a task" />
+            <button class="btn">Add</button>
+          </div>
+          <ul class="task-list">
+            <!-- <li class="checked">Task 1<span>&times;</span></li>
+            <li>Task 2<span>&times;</span></li>
+            <li>Task 3<span>&times;</span></li> -->
+          </ul>
+        </div>
       </div>
     </main>
 
