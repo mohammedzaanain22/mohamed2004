@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 :root{
+    
     --gray :#333;
     --green :#4bae4f ;
     --light-gray : #edeef0
