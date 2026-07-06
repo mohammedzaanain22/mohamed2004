@@ -31,8 +31,8 @@ header ul li button{
     border: none;
     border-radius: 5px;
     width: 120px;
-      height: 40px;
-      cursor: pointer;
+    height: 40px;
+    cursor: pointer;
 }
 header ul li button.active{
 background-color: #3E70F0;
@@ -73,7 +73,9 @@ border-radius: 12px;
     .allcards {
         grid-template-columns: 1fr;
     }
-
+body{
+    color: black;
+}
 header {
     width: 100%;
 }
