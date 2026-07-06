@@ -1,35 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tody-List By Mohamed</title>
+const btn = document.querySelector(".btn");
+const input = document.querySelector("#input-text");
+const list = document.querySelector(".task-list");
+function addTask(){
+    let taskinput = input.value ;
+    if(!taskinput){
+        alert("رجاء كتابة مهام ");
+    }else{
+        let li = document.createElement("li");
+        let span = document.createElement("span");
+         li.innerHTML = taskinput ;
+         list.appendChild(li);
+         span.innerHTML = "&times;";
+         li.appendChild(span);
+         input.value="";
+    }
+            input.value="";
+            setTask();
 
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+}
 
-  <body>
-    <main>
-      <div class="container">
-        <div class="todo-list">
-          <div class="title">
-            <h2>Todo List</h2>
-            <img src="img/icon1.png" alt="img-list" />
-          </div>
-          <div class="Row">
-            <input maxlength="120" type="text" id="input-text" placeholder="Enter a task" />
-            <button class="btn">Add</button>
-          </div>
-          <ul class="task-list">
-            <!-- <li class="checked">Task 1<span>&times;</span></li>
-            <li>Task 2<span>&times;</span></li>
-            <li>Task 3<span>&times;</span></li> -->
-          </ul>
-        </div>
-      </div>
-    </main>
+btn.addEventListener("click" ,addTask ) ;
 
-    <script src="script.js"></script>
-  </body>
-</html>
+list.addEventListener("click", function(e) {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+                    setTask();
+
+    }else if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+                    setTask();
+
+
+    }
+        
+});
+input.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        addTask();
+    }
+})
+function setTask(){
+    localStorage.setItem("lists" ,list.innerHTML );
+}
+function loadTask(){
+    list.innerHTML = localStorage.getItem("lists");
+}
+loadTask();
