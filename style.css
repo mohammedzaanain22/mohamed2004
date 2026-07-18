@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#E8F2FC;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.cart{
+    text-decoration:none;
+    color:white;
+    background:#3E70F0;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.allcards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px lightgray;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.title{
+    padding:15px;
+    text-align:center;
+}
+
+.price{
+    font-size:20px;
+    color:#3E70F0;
+    margin:10px 0;
+}
+
+.qty{
+    width:70px;
+    padding:5px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#3E70F0;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#244fb7;
+}
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,
+td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+#grandTotal{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back{
+    display:block;
+    width:200px;
+    margin:20px auto;
+    text-align:center;
+    text-decoration:none;
+    background:#3E70F0;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+}
+
+@media(max-width:900px){
+
+.allcards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.allcards{
+
+grid-template-columns:1fr;
+
+}
+
+}
